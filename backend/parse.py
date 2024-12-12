@@ -12,32 +12,16 @@ from langchain_community.chat_models import ChatOpenAI
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-import google.generativeai as genai
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnablePassthrough, Runnable, RunnableMap, RunnableLambda
-from concurrent.futures import ThreadPoolExecutor
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAI, HarmCategory
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 from langchain_google_genai.embeddings import GoogleGenerativeAIEmbeddings
 
-# Load environment variables from .env file
-# API_KEY = os.environ['OPENAI_API_KEY']
-#
-# if not API_KEY:
-#     raise ValueError("GEMINI apikey not found. Please add it to your .env file.")
-
 # # # Initialize the OpenAI model
 token_usage = {}
 
-# model = ChatOpenAI(
-#     api_key=API_KEY,
-#     temperature=0.5,
-#     timeout=None,
-#     model='gpt-4o-mini',
-#     max_tokens=420,
-# )
 load_dotenv()
 
 embedding_model = GoogleGenerativeAIEmbeddings(
@@ -52,9 +36,6 @@ embedding_model = GoogleGenerativeAIEmbeddings(
 )
 
 
-# embedding_model = OpenAIEmbeddings(
-#     model="text-embedding-ada-002",
-# )
 def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs).replace("\n", "")
 
@@ -84,9 +65,6 @@ def create_summary_chain(text):
         max_retries=2,
         api_key=os.environ['GEMINI_API_KEY'],
     )
-
-    # parsed_results = []
-    # vector_store = create_faiss_index(text)
 
     # Define the query for similarity search
     query = (
@@ -120,32 +98,7 @@ def create_summary_chain(text):
     )
     print('Your summary has been created: ',type(answer))
     return answer
-    # Perform similarity search
-    # print(f"Simalirity tracked.")
-    # docs = vector_store.similarity_search_with_score(query, k=1)
-    # print(f"Documents found: {docs}")
-    # # Load the QA chain with updated prompt
-    # summary_chain = load_qa_chain(model, chain_type="stuff", prompt=summary_prompt)
-    #
-    # # Extract relevant documents based on score threshold
-    # relevant_docs = [doc for doc, score in docs if score >= 0.7]
-    # print(f"Relevant documents: {len(relevant_docs)}")
-    # # Parse the relevant chunks
-    # if relevant_docs:
-    #     with ThreadPoolExecutor() as executor:
-    #         responses = list(
-    #             executor.map(
-    #                 lambda doc: summary_chain.run(input_documents=[doc], question=query),
-    #                 relevant_docs
-    #             )
-    #         )
-    #
-    #         parsed_results.extend(
-    #             response.strip("\n") if hasattr(response, "content") else str(response)
-    #             for response in responses
-    #         )
-    #
-    # return "\n".join(parsed_results)
+
 
 class NormalAnswer(Runnable):
     def __init__(self, message):
@@ -385,7 +338,7 @@ def create_qa_chain(docs, question, scrapped_content):
         answer = simple_answer_chain(question)
 
 
-    return answer.strip("\n") if hasattr(answer, "content") else str(answer)
+    return '<i>unverified...<i> \n'+ answer.strip("\n") if hasattr(answer, "content") else str(answer)
 
 def question_generator(context, question):
     prompt = PromptTemplate(
@@ -421,114 +374,3 @@ def question_generator(context, question):
 
 
 
-# Define the prompt template
-# template = (
-#     "You are friendly and is expert in extracting specific information from the following text content: {context}. "
-#     "Please follow these instructions carefully: \n\n"
-#     "1. **Extract Information:** Make your own answer that directly matches the provided Question: {question}.  "
-#     "2. **No Extra Content:** Do not include any additional text, comments, or explanations in your response. "
-#     "3. **No Information:** if no information is found then continue returning whitespace"
-#     "4. **Direct Data Only:** Your output should contain only the data that is explicitly requested, with no other text."
-#     "5. **Out of Context Response:** If the information is not present in the context, use your own knowledge to generate an answer to the question. Ensure your response is accurate and helpful.\n"
-#     "Note that dates also be an inclusion for some questions taken from the context."
-# )
-#
-#
-# def parse_with_googlegenai(dom_chunks, question, top_k=1):
-#     """
-#     Parses content using LangChain and FAISS for similarity search while tracking token usage.
-#
-#     Args:
-#         dom_chunks (list): List of DOM content chunks to parse.
-#         parse_description (str): Description of the parsing task.
-#         top_k (int): Number of most relevant chunks to retrieve.
-#
-#     Returns:
-#         str: string of parsed results.
-#     """
-#     # Initialize a dictionary to store token usage
-#     # Create FAISS index
-#     vector_store = create_faiss_index(dom_chunks)
-#
-#     # Build the chain
-#     prompt = ChatPromptTemplate.from_template(template)
-#     chain = load_qa_chain(model, chain_type="stuff", prompt=prompt)
-#
-#     # Tokenizer for tracking
-#     tokenizer = tiktoken.encoding_for_model("gpt-4o-mni")  # Replace with appropriate model if needed
-#
-#     # Perform similarity search
-#     query = question
-#     docs = vector_store.similarity_search_with_score(query, k=top_k)
-#     # Check if any document is relevant
-#     relevant_docs = [doc for doc, score in docs if score >= 0.3]
-#     # Parse the relevant chunks
-#     if relevant_docs:
-#         parsed_results = []
-#         for i, (doc, score) in enumerate(docs, start=1):
-#             if score >= 0.3:
-#                 # Tokenize input document and query
-#                 input_text = doc.page_content + "\n\n" + question
-#                 input_tokens = len(tokenizer.encode(input_text))
-#
-#                 # Run the chain
-#                 response = chain.run(
-#                     input_documents=[doc],
-#                     question=question
-#                 )
-#
-#                 # Tokenize output response
-#                 output_tokens = len(tokenizer.encode(response if hasattr(response, 'content') else str(response)))
-#
-#                 # Store token counts in the dictionary
-#                 token_usage[f"Document {i}"] = {
-#                     "input_tokens": input_tokens,
-#                     "output_tokens": output_tokens
-#                 }
-#
-#                 # print(f"Parsed document: {i} of {top_k}")
-#                 print(response)
-#                 print(type(response))
-#                 parsed_results.append(response.strip("\n") if hasattr(response, 'content') else str(response))
-#
-#             return "\n".join(parsed_results)
-#
-#
-# def question_answer_chain(dom_chunks, question):
-#     tokenizer = tiktoken.encoding_for_model('gpt-4o-mini')
-#     input_text = "".join(dom_chunks) + "" + question
-#     input_token = len(tokenizer.encode(input_text))
-#     vectorstore = create_faiss_index(dom_chunks)
-#     retriever = vectorstore.as_retriever()
-#     prompt = PromptTemplate(
-#         input_variables=["context", "question"],
-#         template=(
-#             f"You are a intelligent customer service agent and your job is to get all the information about the gieven context. "
-#             f""""Your job is to answer all the information a potential customer might ask about. This includes:
-#                 Company Overview: What does the company do? What products or services do they offer?
-#                 Contact Information: How can customers reach the company (e.g., email, phone, chat)?
-#                 Pricing and Packages: What are the pricing plans, subscription options, or payment methods?
-#                 Policies: What are the return, refund, or cancellation policies? Are there shipping and delivery details?
-#                 FAQs: What are the most common questions and their answers provided on the website?
-#                 Numerical Datas: Any thing relating to number and the company
-#                 Special Features: What makes the company or its offerings unique? Are there any ongoing promotions, discounts, or special services?
-#                 Additional Information: Are there any testimonials, students, case studies, or blog content that might be helpful to customers?
-#                 Using the website's content,give response that could help the customer interacting via a chat service.
-#                 Ensure the tone is professional, friendly, and clear."
-#                 """
-#             "Text: {context}. "
-#             "Question: {question}"
-#         )
-#     )
-#     chain = (
-#             {"context": retriever | format_docs, "question": RunnablePassthrough()}
-#             | prompt
-#             | model
-#             | StrOutputParser()
-#     )
-#     answer = chain.invoke(question)
-#     output_token = len(tokenizer.encode(answer))
-#
-#     token_usage['input'] = input_token
-#     token_usage['output'] = output_token
-#     return answer.strip("\n") if hasattr(answer, "content") else str(answer)

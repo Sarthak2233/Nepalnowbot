@@ -1,6 +1,5 @@
 import asyncio
 import re
-
 import requests
 from playwright.async_api import async_playwright
 import platform

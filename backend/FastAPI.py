@@ -1,17 +1,15 @@
 import os
-import asyncio
+import uuid
+
 import aiofiles
-import threading
-from threading import Thread
 from datetime import datetime
-from fastapi import FastAPI, HTTPException, requests
-from fastapi.responses import RedirectResponse
+from fastapi import FastAPI, HTTPException
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from scrape import extract_all_links_and_content, extract_anchor_tags, split_dom_content
 from parse import create_summary_chain, create_qa_chain, question_generator
-from storage import save_to_storage, get_from_storage
+from storage import save_to_storage, get_from_storage, conversation_history
 
 app = FastAPI()
 
@@ -34,9 +32,10 @@ ANCHOR_TAGS_FILE_PATH = "ScrappedData/scripts/anchor_tags.txt"
 HARDCODED_URL = "https://nepalnow.travel"
 
 users = {
+    'user_id': 1,
     'name': 'Sarthak Basnet',
     'email' : 'sarthak.basnet5@gmail.com',
-    'password': 'asdfghjkl'
+    'password': 'sarthak'
 }
 
 async def load_from_file(file_path):
@@ -59,9 +58,6 @@ async def scrape_and_store_job():
         # Scraping logic here
         print(f"Scraping job completed successfully at {datetime.now()}")
         dom_content = []
-        links = []
-        # extracts = await asyncio.to_thread(await extract_all_links_and_content(HARDCODED_URL))
-        # print("Extracts:", extracts)
         extracts = await extract_all_links_and_content(HARDCODED_URL)
         for url, content in extracts.items():
             print(f"URL: {url}")
@@ -108,8 +104,8 @@ async def generate_summary_job():
                 summaries.append(summary)
 
             refined_contents = "\n".join(summaries)
-            save_to_file(REFINED_FILE_PATH, refined_contents)
-            save_to_storage("refined_content", refined_contents)
+            await save_to_file(REFINED_FILE_PATH, refined_contents)
+            await save_to_storage("refined_content", refined_contents)
             print("Summary generated and stored successfully!")
 
     except Exception as e:
@@ -152,26 +148,19 @@ async def startup_event():
     print("Starting FastAPI server: Initializing scraping and summarization...")
     refined_content = await load_from_file(REFINED_FILE_PATH)
 
-    # if refined_content:
-    #     print("Loaded previous summary from file.")
-    # else:
-    #     print("No previous summary found. Performing initial scraping and summarization.")
-    #     await scrape_and_store_job()  # Perform scraping
-    #     await generate_summary_job()
-    global first_run_completed
-    if not first_run_completed:
-        await asyncio.gather(
-            scrape_and_store_job(),
-            generate_summary_job()
-        )
-        first_run_completed = True
+    if refined_content:
+        print("Loaded previous summary from file.")
+    else:
+        print("No previous summary found. Performing initial scraping and summarization.")
+        await scrape_and_store_job()  # Perform scraping
+        await generate_summary_job()
 
-        # Start scheduler for periodic updates
-    scheduler.add_job(scrape_and_store_job, "interval", hours=1, replace_existing=True)  # Run every hour
-    scheduler.add_job(generate_summary_job, "interval", hours=1.2, replace_existing=True)  # Adjust start time as needed
-    scheduler_thread = Thread(target=run_scheduler)
-    scheduler_thread.daemon = True  # Ensures the thread exits when the main program does
-    scheduler_thread.start()
+    # Start scheduler for periodic updates
+    scheduler.add_job(scrape_and_store_job, "interval", hours=1.12, replace_existing=True)
+    # Run every hour
+    scheduler.add_job(generate_summary_job, "interval", hours=1.17, replace_existing=True)  # Adjust start time as needed
+    scheduler.start()
+
 
 
 async def autostart_logic(context, question):
@@ -213,6 +202,8 @@ async def query_chatbot(request: QueryRequest):
     Query the chatbot and ensure related questions are dynamically generated with /autostart.
     """
     try:
+        session_id = uuid.uuid4()
+        print("Session Id : ",session_id)
         user_query = request.user_query  # Access the user query from the request
         if not user_query:
             raise HTTPException(status_code=400, detail="Query cannot be empty.")
@@ -228,6 +219,10 @@ async def query_chatbot(request: QueryRequest):
         # Trigger the autostart logic to generate related questions
         questions = await autostart_logic(refined_content, user_query)
 
+        if session_id not in conversation_history:
+            conversation_history[session_id] = []
+        conversation_history[session_id].append({'user_query': user_query, 'bot_response': result})
+
         return {
             "response": result,
             "related_questions": questions  # Include related questions as part of the response
@@ -235,3 +230,11 @@ async def query_chatbot(request: QueryRequest):
     except Exception as e:
         return {"error": f"Failed to process query: {str(e)}"}
 
+@app.get("/history/{session_id}")
+async def get_conversation_history(session_id: str):
+    """
+    Retrieve conversation history for a given session.
+    """
+    if session_id not in conversation_history:
+        return {"message": "No conversation history found for this session."}
+    return conversation_history[session_id]

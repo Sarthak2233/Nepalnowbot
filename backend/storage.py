@@ -3,7 +3,7 @@ storage = {
     "refined_content": "",
     "anchor_tags": []
 }
-
+conversation_history = {}
 def save_to_storage(key, value):
     storage[key] = value
 

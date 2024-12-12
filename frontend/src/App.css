@@ -39,7 +39,7 @@ body, html {
 
 /* Hover Effect */
 .centerImage:hover {
-  background: #ede8d0;
+  background: indigo;
   transform: perspective(700px) rotateX(0deg) rotateY(0deg) scale(20);
   box-shadow:-10px 110px 10px 20px rgba(0, 0, 0, 0.5), 0px 200px 60px 800px rgba(0, 0, 0, 0.3);
 }
@@ -158,10 +158,14 @@ body, html {
     padding-left: 40px/* Centers the image horizontally, if necessary */
 }
 .section {
-    font-size: 25px;
-    color: brown;
+    font-size: 13px;
+    color: white;
     margin-top: 3px;
-
+    border: 2px solid rgba(1, 1, 1, 0.28);
+    background-color: rgba(1, 1, 1, 0.28); /* Semi-transparent background */
+    border-radius: 100px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Light shadow for 2D pop effect */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
 }
 
 .icons {

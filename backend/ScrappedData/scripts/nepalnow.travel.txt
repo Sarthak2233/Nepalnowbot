@@ -122,17 +122,17 @@ Make sure you let someone know your route. If family is that someone, ensure the
 Carry a list of important Nepal based telephone numbers is case of emergency. Some numbers are already on this site.
 Kathmandu
 Kathmandu
-11:54 am,
+3:31 pm,
 Dec 12, 2024
-16
+17
 °C
-haze
+few clouds
 Humidity
 48 %
 Pressure
-1013 mb
+1012 mb
 Wind
-3 mph
+9 mph
 Wind Gust
 Wind Gust:
 0 mph
@@ -141,7 +141,7 @@ Clouds:
 20%
 Visibility
 Visibility:
-5 km
+7 km
 Sunrise
 Sunrise:
 6:45 am
@@ -151,23 +151,23 @@ Sunset:
 Weather from OpenWeatherMap
 Pokhara
 Pokhara
-11:54 am,
+3:31 pm,
 Dec 12, 2024
-20
+18
 °C
-scattered clouds
+clear sky
 Humidity
-25 %
+39 %
 Pressure
-1014 mb
+1012 mb
 Wind
 6 mph
 Wind Gust
 Wind Gust:
-3 mph
+5 mph
 Clouds
 Clouds:
-36%
+9%
 Visibility
 Visibility:
 10 km
@@ -180,23 +180,23 @@ Sunset:
 Weather from OpenWeatherMap
 Lumbini
 Lumbini
-11:54 am,
+3:31 pm,
 Dec 12, 2024
-20
+22
 °C
-broken clouds
+few clouds
 Humidity
-36 %
+32 %
 Pressure
-1015 mb
+1012 mb
 Wind
-2 mph
+5 mph
 Wind Gust
 Wind Gust:
-2 mph
+6 mph
 Clouds
 Clouds:
-52%
+23%
 Visibility
 Visibility:
 10 km
@@ -209,23 +209,23 @@ Sunset:
 Weather from OpenWeatherMap
 Chitwan
 Bharatpur, NP
-11:54 am,
+3:31 pm,
 Dec 12, 2024
 21
 °C
-broken clouds
+scattered clouds
 Humidity
-36 %
+40 %
 Pressure
-1015 mb
+1012 mb
 Wind
-5 mph
+3 mph
 Wind Gust
 Wind Gust:
-5 mph
+3 mph
 Clouds
 Clouds:
-64%
+47%
 Visibility
 Visibility:
 10 km
@@ -304,17 +304,17 @@ nepalnow
 Status
 Kathmandu
 Kathmandu
-11:53 am,
+3:30 pm,
 Dec 12, 2024
-16
+17
 °C
-haze
+few clouds
 Humidity
 48 %
 Pressure
-1013 mb
+1012 mb
 Wind
-3 mph
+9 mph
 Wind Gust
 Wind Gust:
 0 mph
@@ -323,7 +323,7 @@ Clouds:
 20%
 Visibility
 Visibility:
-5 km
+7 km
 Sunrise
 Sunrise:
 6:45 am
@@ -333,23 +333,23 @@ Sunset:
 Weather from OpenWeatherMap
 Pokhara
 Pokhara
-11:53 am,
+3:30 pm,
 Dec 12, 2024
-20
+18
 °C
-scattered clouds
+clear sky
 Humidity
-25 %
+39 %
 Pressure
-1014 mb
+1012 mb
 Wind
 6 mph
 Wind Gust
 Wind Gust:
-3 mph
+5 mph
 Clouds
 Clouds:
-36%
+9%
 Visibility
 Visibility:
 10 km
@@ -362,23 +362,23 @@ Sunset:
 Weather from OpenWeatherMap
 Lumbini
 Lumbini
-11:53 am,
+3:30 pm,
 Dec 12, 2024
-20
+22
 °C
-broken clouds
+few clouds
 Humidity
-36 %
+32 %
 Pressure
-1015 mb
+1012 mb
 Wind
-2 mph
+5 mph
 Wind Gust
 Wind Gust:
-2 mph
+6 mph
 Clouds
 Clouds:
-52%
+23%
 Visibility
 Visibility:
 10 km
@@ -391,23 +391,23 @@ Sunset:
 Weather from OpenWeatherMap
 Chitwan
 Bharatpur, NP
-11:53 am,
+3:30 pm,
 Dec 12, 2024
 21
 °C
-broken clouds
+scattered clouds
 Humidity
-36 %
+40 %
 Pressure
-1015 mb
+1012 mb
 Wind
-5 mph
+3 mph
 Wind Gust
 Wind Gust:
-5 mph
+3 mph
 Clouds
 Clouds:
-64%
+47%
 Visibility
 Visibility:
 10 km
@@ -480,17 +480,17 @@ Whats Happening
 There are no upcoming events.
 Kathmandu
 Kathmandu
-11:48 am,
+3:25 pm,
 Dec 12, 2024
-16
+17
 °C
-haze
+few clouds
 Humidity
 48 %
 Pressure
-1013 mb
+1012 mb
 Wind
-3 mph
+9 mph
 Wind Gust
 Wind Gust:
 0 mph
@@ -499,7 +499,7 @@ Clouds:
 20%
 Visibility
 Visibility:
-5 km
+7 km
 Sunrise
 Sunrise:
 6:45 am
@@ -509,23 +509,23 @@ Sunset:
 Weather from OpenWeatherMap
 Pokhara
 Pokhara
-11:48 am,
+3:25 pm,
 Dec 12, 2024
-20
+18
 °C
-scattered clouds
+clear sky
 Humidity
-25 %
+39 %
 Pressure
-1014 mb
+1012 mb
 Wind
 6 mph
 Wind Gust
 Wind Gust:
-3 mph
+5 mph
 Clouds
 Clouds:
-36%
+9%
 Visibility
 Visibility:
 10 km
@@ -538,23 +538,23 @@ Sunset:
 Weather from OpenWeatherMap
 Lumbini
 Lumbini
-11:48 am,
+3:25 pm,
 Dec 12, 2024
-20
+22
 °C
-broken clouds
+few clouds
 Humidity
-36 %
+32 %
 Pressure
-1015 mb
+1012 mb
 Wind
-2 mph
+5 mph
 Wind Gust
 Wind Gust:
-2 mph
+6 mph
 Clouds
 Clouds:
-52%
+23%
 Visibility
 Visibility:
 10 km
@@ -567,23 +567,23 @@ Sunset:
 Weather from OpenWeatherMap
 Chitwan
 Bharatpur, NP
-11:48 am,
+3:25 pm,
 Dec 12, 2024
 21
 °C
-broken clouds
+scattered clouds
 Humidity
-36 %
+40 %
 Pressure
-1015 mb
+1012 mb
 Wind
-5 mph
+3 mph
 Wind Gust
 Wind Gust:
-5 mph
+3 mph
 Clouds
 Clouds:
-64%
+47%
 Visibility
 Visibility:
 10 km
@@ -675,17 +675,17 @@ Dashain Festival
 Dashain, the biggest festival in Nepal, is a vibrant celebration lasting up to 15 days, usually in October. It honors the goddess Durga's victory over evil, symbolizing the triumph of good. Families gather to worship, feast, and exchange blessings. Traditional rituals include sacrificing goats and chickens, as well as receiving tika—red paste—on the forehead from […]
 Kathmandu
 Kathmandu
-11:48 am,
+3:25 pm,
 Dec 12, 2024
-16
+17
 °C
-haze
+few clouds
 Humidity
 48 %
 Pressure
-1013 mb
+1012 mb
 Wind
-3 mph
+9 mph
 Wind Gust
 Wind Gust:
 0 mph
@@ -694,7 +694,7 @@ Clouds:
 20%
 Visibility
 Visibility:
-5 km
+7 km
 Sunrise
 Sunrise:
 6:45 am
@@ -704,23 +704,23 @@ Sunset:
 Weather from OpenWeatherMap
 Pokhara
 Pokhara
-11:48 am,
+3:25 pm,
 Dec 12, 2024
-20
+18
 °C
-scattered clouds
+clear sky
 Humidity
-25 %
+39 %
 Pressure
-1014 mb
+1012 mb
 Wind
 6 mph
 Wind Gust
 Wind Gust:
-3 mph
+5 mph
 Clouds
 Clouds:
-36%
+9%
 Visibility
 Visibility:
 10 km
@@ -733,23 +733,23 @@ Sunset:
 Weather from OpenWeatherMap
 Lumbini
 Lumbini
-11:48 am,
+3:25 pm,
 Dec 12, 2024
-20
+22
 °C
-broken clouds
+few clouds
 Humidity
-36 %
+32 %
 Pressure
-1015 mb
+1012 mb
 Wind
-2 mph
+5 mph
 Wind Gust
 Wind Gust:
-2 mph
+6 mph
 Clouds
 Clouds:
-52%
+23%
 Visibility
 Visibility:
 10 km
@@ -762,23 +762,23 @@ Sunset:
 Weather from OpenWeatherMap
 Chitwan
 Bharatpur, NP
-11:48 am,
+3:25 pm,
 Dec 12, 2024
 21
 °C
-broken clouds
+scattered clouds
 Humidity
-36 %
+40 %
 Pressure
-1015 mb
+1012 mb
 Wind
-5 mph
+3 mph
 Wind Gust
 Wind Gust:
-5 mph
+3 mph
 Clouds
 Clouds:
-64%
+47%
 Visibility
 Visibility:
 10 km
@@ -835,17 +835,17 @@ Should I cancel my trip to Nepal?
 Read More
 Kathmandu
 Kathmandu
-11:48 am,
+3:25 pm,
 Dec 12, 2024
-16
+17
 °C
-haze
+few clouds
 Humidity
 48 %
 Pressure
-1013 mb
+1012 mb
 Wind
-3 mph
+9 mph
 Wind Gust
 Wind Gust:
 0 mph
@@ -854,7 +854,7 @@ Clouds:
 20%
 Visibility
 Visibility:
-5 km
+7 km
 Sunrise
 Sunrise:
 6:45 am
@@ -864,23 +864,23 @@ Sunset:
 Weather from OpenWeatherMap
 Pokhara
 Pokhara
-11:48 am,
+3:25 pm,
 Dec 12, 2024
-20
+18
 °C
-scattered clouds
+clear sky
 Humidity
-25 %
+39 %
 Pressure
-1014 mb
+1012 mb
 Wind
 6 mph
 Wind Gust
 Wind Gust:
-3 mph
+5 mph
 Clouds
 Clouds:
-36%
+9%
 Visibility
 Visibility:
 10 km
@@ -893,23 +893,23 @@ Sunset:
 Weather from OpenWeatherMap
 Lumbini
 Lumbini
-11:48 am,
+3:25 pm,
 Dec 12, 2024
-20
+22
 °C
-broken clouds
+few clouds
 Humidity
-36 %
+32 %
 Pressure
-1015 mb
+1012 mb
 Wind
-2 mph
+5 mph
 Wind Gust
 Wind Gust:
-2 mph
+6 mph
 Clouds
 Clouds:
-52%
+23%
 Visibility
 Visibility:
 10 km
@@ -922,23 +922,23 @@ Sunset:
 Weather from OpenWeatherMap
 Chitwan
 Bharatpur, NP
-11:48 am,
+3:25 pm,
 Dec 12, 2024
 21
 °C
-broken clouds
+scattered clouds
 Humidity
-36 %
+40 %
 Pressure
-1015 mb
+1012 mb
 Wind
-5 mph
+3 mph
 Wind Gust
 Wind Gust:
-5 mph
+3 mph
 Clouds
 Clouds:
-64%
+47%
 Visibility
 Visibility:
 10 km
@@ -995,17 +995,17 @@ Should I cancel my trip to Nepal?
 Read More
 Kathmandu
 Kathmandu
-11:49 am,
+3:25 pm,
 Dec 12, 2024
-16
+17
 °C
-haze
+few clouds
 Humidity
 48 %
 Pressure
-1013 mb
+1012 mb
 Wind
-3 mph
+9 mph
 Wind Gust
 Wind Gust:
 0 mph
@@ -1014,7 +1014,7 @@ Clouds:
 20%
 Visibility
 Visibility:
-5 km
+7 km
 Sunrise
 Sunrise:
 6:45 am
@@ -1024,23 +1024,23 @@ Sunset:
 Weather from OpenWeatherMap
 Pokhara
 Pokhara
-11:49 am,
+3:25 pm,
 Dec 12, 2024
-20
+18
 °C
-scattered clouds
+clear sky
 Humidity
-25 %
+39 %
 Pressure
-1014 mb
+1012 mb
 Wind
 6 mph
 Wind Gust
 Wind Gust:
-3 mph
+5 mph
 Clouds
 Clouds:
-36%
+9%
 Visibility
 Visibility:
 10 km
@@ -1053,23 +1053,23 @@ Sunset:
 Weather from OpenWeatherMap
 Lumbini
 Lumbini
-11:49 am,
+3:25 pm,
 Dec 12, 2024
-20
+22
 °C
-broken clouds
+few clouds
 Humidity
-36 %
+32 %
 Pressure
-1015 mb
+1012 mb
 Wind
-2 mph
+5 mph
 Wind Gust
 Wind Gust:
-2 mph
+6 mph
 Clouds
 Clouds:
-52%
+23%
 Visibility
 Visibility:
 10 km
@@ -1082,23 +1082,23 @@ Sunset:
 Weather from OpenWeatherMap
 Chitwan
 Bharatpur, NP
-11:49 am,
+3:25 pm,
 Dec 12, 2024
 21
 °C
-broken clouds
+scattered clouds
 Humidity
-36 %
+40 %
 Pressure
-1015 mb
+1012 mb
 Wind
-5 mph
+3 mph
 Wind Gust
 Wind Gust:
-5 mph
+3 mph
 Clouds
 Clouds:
-64%
+47%
 Visibility
 Visibility:
 10 km
@@ -1177,17 +1177,17 @@ Whats Happening
 There are no upcoming events.
 Kathmandu
 Kathmandu
-11:53 am,
+3:30 pm,
 Dec 12, 2024
-16
+17
 °C
-haze
+few clouds
 Humidity
 48 %
 Pressure
-1013 mb
+1012 mb
 Wind
-3 mph
+9 mph
 Wind Gust
 Wind Gust:
 0 mph
@@ -1196,7 +1196,7 @@ Clouds:
 20%
 Visibility
 Visibility:
-5 km
+7 km
 Sunrise
 Sunrise:
 6:45 am
@@ -1206,23 +1206,23 @@ Sunset:
 Weather from OpenWeatherMap
 Pokhara
 Pokhara
-11:53 am,
+3:30 pm,
 Dec 12, 2024
-20
+18
 °C
-scattered clouds
+clear sky
 Humidity
-25 %
+39 %
 Pressure
-1014 mb
+1012 mb
 Wind
 6 mph
 Wind Gust
 Wind Gust:
-3 mph
+5 mph
 Clouds
 Clouds:
-36%
+9%
 Visibility
 Visibility:
 10 km
@@ -1235,23 +1235,23 @@ Sunset:
 Weather from OpenWeatherMap
 Lumbini
 Lumbini
-11:53 am,
+3:30 pm,
 Dec 12, 2024
-20
+22
 °C
-broken clouds
+few clouds
 Humidity
-36 %
+32 %
 Pressure
-1015 mb
+1012 mb
 Wind
-2 mph
+5 mph
 Wind Gust
 Wind Gust:
-2 mph
+6 mph
 Clouds
 Clouds:
-52%
+23%
 Visibility
 Visibility:
 10 km
@@ -1264,23 +1264,23 @@ Sunset:
 Weather from OpenWeatherMap
 Chitwan
 Bharatpur, NP
-11:53 am,
+3:30 pm,
 Dec 12, 2024
 21
 °C
-broken clouds
+scattered clouds
 Humidity
-36 %
+40 %
 Pressure
-1015 mb
+1012 mb
 Wind
-5 mph
+3 mph
 Wind Gust
 Wind Gust:
-5 mph
+3 mph
 Clouds
 Clouds:
-64%
+47%
 Visibility
 Visibility:
 10 km
@@ -1358,17 +1358,17 @@ Whats Happening
 There are no upcoming events.
 Kathmandu
 Kathmandu
-11:50 am,
+3:26 pm,
 Dec 12, 2024
-16
+17
 °C
-haze
+few clouds
 Humidity
 48 %
 Pressure
-1013 mb
+1012 mb
 Wind
-3 mph
+9 mph
 Wind Gust
 Wind Gust:
 0 mph
@@ -1377,7 +1377,7 @@ Clouds:
 20%
 Visibility
 Visibility:
-5 km
+7 km
 Sunrise
 Sunrise:
 6:45 am
@@ -1387,23 +1387,23 @@ Sunset:
 Weather from OpenWeatherMap
 Pokhara
 Pokhara
-11:50 am,
+3:26 pm,
 Dec 12, 2024
-20
+18
 °C
-scattered clouds
+clear sky
 Humidity
-25 %
+39 %
 Pressure
-1014 mb
+1012 mb
 Wind
 6 mph
 Wind Gust
 Wind Gust:
-3 mph
+5 mph
 Clouds
 Clouds:
-36%
+9%
 Visibility
 Visibility:
 10 km
@@ -1416,23 +1416,23 @@ Sunset:
 Weather from OpenWeatherMap
 Lumbini
 Lumbini
-11:50 am,
+3:26 pm,
 Dec 12, 2024
-20
+22
 °C
-broken clouds
+few clouds
 Humidity
-36 %
+32 %
 Pressure
-1015 mb
+1012 mb
 Wind
-2 mph
+5 mph
 Wind Gust
 Wind Gust:
-2 mph
+6 mph
 Clouds
 Clouds:
-52%
+23%
 Visibility
 Visibility:
 10 km
@@ -1445,23 +1445,23 @@ Sunset:
 Weather from OpenWeatherMap
 Chitwan
 Bharatpur, NP
-11:50 am,
+3:26 pm,
 Dec 12, 2024
 21
 °C
-broken clouds
+scattered clouds
 Humidity
-36 %
+40 %
 Pressure
-1015 mb
+1012 mb
 Wind
-5 mph
+3 mph
 Wind Gust
 Wind Gust:
-5 mph
+3 mph
 Clouds
 Clouds:
-64%
+47%
 Visibility
 Visibility:
 10 km
@@ -1524,17 +1524,17 @@ Whats Happening
 There are no upcoming events.
 Kathmandu
 Kathmandu
-11:51 am,
+3:27 pm,
 Dec 12, 2024
-16
+17
 °C
-haze
+few clouds
 Humidity
 48 %
 Pressure
-1013 mb
+1012 mb
 Wind
-3 mph
+9 mph
 Wind Gust
 Wind Gust:
 0 mph
@@ -1543,7 +1543,7 @@ Clouds:
 20%
 Visibility
 Visibility:
-5 km
+7 km
 Sunrise
 Sunrise:
 6:45 am
@@ -1553,23 +1553,23 @@ Sunset:
 Weather from OpenWeatherMap
 Pokhara
 Pokhara
-11:51 am,
+3:27 pm,
 Dec 12, 2024
-20
+18
 °C
-scattered clouds
+clear sky
 Humidity
-25 %
+39 %
 Pressure
-1014 mb
+1012 mb
 Wind
 6 mph
 Wind Gust
 Wind Gust:
-3 mph
+5 mph
 Clouds
 Clouds:
-36%
+9%
 Visibility
 Visibility:
 10 km
@@ -1582,23 +1582,23 @@ Sunset:
 Weather from OpenWeatherMap
 Lumbini
 Lumbini
-11:51 am,
+3:27 pm,
 Dec 12, 2024
-20
+22
 °C
-broken clouds
+few clouds
 Humidity
-36 %
+32 %
 Pressure
-1015 mb
+1012 mb
 Wind
-2 mph
+5 mph
 Wind Gust
 Wind Gust:
-2 mph
+6 mph
 Clouds
 Clouds:
-52%
+23%
 Visibility
 Visibility:
 10 km
@@ -1611,23 +1611,23 @@ Sunset:
 Weather from OpenWeatherMap
 Chitwan
 Bharatpur, NP
-11:51 am,
+3:27 pm,
 Dec 12, 2024
 21
 °C
-broken clouds
+scattered clouds
 Humidity
-36 %
+40 %
 Pressure
-1015 mb
+1012 mb
 Wind
-5 mph
+3 mph
 Wind Gust
 Wind Gust:
-5 mph
+3 mph
 Clouds
 Clouds:
-64%
+47%
 Visibility
 Visibility:
 10 km
@@ -1690,17 +1690,17 @@ Whats Happening
 There are no upcoming events.
 Kathmandu
 Kathmandu
-11:51 am,
+3:28 pm,
 Dec 12, 2024
-16
+17
 °C
-haze
+few clouds
 Humidity
 48 %
 Pressure
-1013 mb
+1012 mb
 Wind
-3 mph
+9 mph
 Wind Gust
 Wind Gust:
 0 mph
@@ -1709,7 +1709,7 @@ Clouds:
 20%
 Visibility
 Visibility:
-5 km
+7 km
 Sunrise
 Sunrise:
 6:45 am
@@ -1719,23 +1719,23 @@ Sunset:
 Weather from OpenWeatherMap
 Pokhara
 Pokhara
-11:51 am,
+3:28 pm,
 Dec 12, 2024
-20
+18
 °C
-scattered clouds
+clear sky
 Humidity
-25 %
+39 %
 Pressure
-1014 mb
+1012 mb
 Wind
 6 mph
 Wind Gust
 Wind Gust:
-3 mph
+5 mph
 Clouds
 Clouds:
-36%
+9%
 Visibility
 Visibility:
 10 km
@@ -1748,23 +1748,23 @@ Sunset:
 Weather from OpenWeatherMap
 Lumbini
 Lumbini
-11:51 am,
+3:28 pm,
 Dec 12, 2024
-20
+22
 °C
-broken clouds
+few clouds
 Humidity
-36 %
+32 %
 Pressure
-1015 mb
+1012 mb
 Wind
-2 mph
+5 mph
 Wind Gust
 Wind Gust:
-2 mph
+6 mph
 Clouds
 Clouds:
-52%
+23%
 Visibility
 Visibility:
 10 km
@@ -1777,23 +1777,23 @@ Sunset:
 Weather from OpenWeatherMap
 Chitwan
 Bharatpur, NP
-11:51 am,
+3:28 pm,
 Dec 12, 2024
 21
 °C
-broken clouds
+scattered clouds
 Humidity
-36 %
+40 %
 Pressure
-1015 mb
+1012 mb
 Wind
-5 mph
+3 mph
 Wind Gust
 Wind Gust:
-5 mph
+3 mph
 Clouds
 Clouds:
-64%
+47%
 Visibility
 Visibility:
 10 km
@@ -1861,17 +1861,17 @@ Whats Happening
 There are no upcoming events.
 Kathmandu
 Kathmandu
-11:52 am,
+3:29 pm,
 Dec 12, 2024
-16
+17
 °C
-haze
+few clouds
 Humidity
 48 %
 Pressure
-1013 mb
+1012 mb
 Wind
-3 mph
+9 mph
 Wind Gust
 Wind Gust:
 0 mph
@@ -1880,7 +1880,7 @@ Clouds:
 20%
 Visibility
 Visibility:
-5 km
+7 km
 Sunrise
 Sunrise:
 6:45 am
@@ -1890,23 +1890,23 @@ Sunset:
 Weather from OpenWeatherMap
 Pokhara
 Pokhara
-11:52 am,
+3:29 pm,
 Dec 12, 2024
-20
+18
 °C
-scattered clouds
+clear sky
 Humidity
-25 %
+39 %
 Pressure
-1014 mb
+1012 mb
 Wind
 6 mph
 Wind Gust
 Wind Gust:
-3 mph
+5 mph
 Clouds
 Clouds:
-36%
+9%
 Visibility
 Visibility:
 10 km
@@ -1919,23 +1919,23 @@ Sunset:
 Weather from OpenWeatherMap
 Lumbini
 Lumbini
-11:52 am,
+3:29 pm,
 Dec 12, 2024
-20
+22
 °C
-broken clouds
+few clouds
 Humidity
-36 %
+32 %
 Pressure
-1015 mb
+1012 mb
 Wind
-2 mph
+5 mph
 Wind Gust
 Wind Gust:
-2 mph
+6 mph
 Clouds
 Clouds:
-52%
+23%
 Visibility
 Visibility:
 10 km
@@ -1948,23 +1948,23 @@ Sunset:
 Weather from OpenWeatherMap
 Chitwan
 Bharatpur, NP
-11:52 am,
+3:29 pm,
 Dec 12, 2024
 21
 °C
-broken clouds
+scattered clouds
 Humidity
-36 %
+40 %
 Pressure
-1015 mb
+1012 mb
 Wind
-5 mph
+3 mph
 Wind Gust
 Wind Gust:
-5 mph
+3 mph
 Clouds
 Clouds:
-64%
+47%
 Visibility
 Visibility:
 10 km
@@ -2034,17 +2034,17 @@ Whats Happening
 There are no upcoming events.
 Kathmandu
 Kathmandu
-11:53 am,
+3:30 pm,
 Dec 12, 2024
-16
+17
 °C
-haze
+few clouds
 Humidity
 48 %
 Pressure
-1013 mb
+1012 mb
 Wind
-3 mph
+9 mph
 Wind Gust
 Wind Gust:
 0 mph
@@ -2053,7 +2053,7 @@ Clouds:
 20%
 Visibility
 Visibility:
-5 km
+7 km
 Sunrise
 Sunrise:
 6:45 am
@@ -2063,23 +2063,23 @@ Sunset:
 Weather from OpenWeatherMap
 Pokhara
 Pokhara
-11:53 am,
+3:30 pm,
 Dec 12, 2024
-20
+18
 °C
-scattered clouds
+clear sky
 Humidity
-25 %
+39 %
 Pressure
-1014 mb
+1012 mb
 Wind
 6 mph
 Wind Gust
 Wind Gust:
-3 mph
+5 mph
 Clouds
 Clouds:
-36%
+9%
 Visibility
 Visibility:
 10 km
@@ -2092,23 +2092,23 @@ Sunset:
 Weather from OpenWeatherMap
 Lumbini
 Lumbini
-11:53 am,
+3:30 pm,
 Dec 12, 2024
-20
+22
 °C
-broken clouds
+few clouds
 Humidity
-36 %
+32 %
 Pressure
-1015 mb
+1012 mb
 Wind
-2 mph
+5 mph
 Wind Gust
 Wind Gust:
-2 mph
+6 mph
 Clouds
 Clouds:
-52%
+23%
 Visibility
 Visibility:
 10 km
@@ -2121,23 +2121,23 @@ Sunset:
 Weather from OpenWeatherMap
 Chitwan
 Bharatpur, NP
-11:53 am,
+3:30 pm,
 Dec 12, 2024
 21
 °C
-broken clouds
+scattered clouds
 Humidity
-36 %
+40 %
 Pressure
-1015 mb
+1012 mb
 Wind
-5 mph
+3 mph
 Wind Gust
 Wind Gust:
-5 mph
+3 mph
 Clouds
 Clouds:
-64%
+47%
 Visibility
 Visibility:
 10 km
