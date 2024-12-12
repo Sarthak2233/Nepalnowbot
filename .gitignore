@@ -1,0 +1,5 @@
+venv
+.env
+service_account_key.json
+backend/chromedriver.exe
+frontend/node_modules

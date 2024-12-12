@@ -1,0 +1,452 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+.landingPage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  min-height: 100vh;
+  background: #FC6A03; /* Fallback solid orange */
+  background: conic-gradient(
+    from 230deg,
+    #FF4500, /* Bright red-orange */
+    #FC6A03, /* Fiery orange */
+    #FFD700, /* Bright yellow for highlights */
+    #FC6A03, /* Return to fiery orange */
+    #FF4500 /* Deep red-orange */
+  );
+  overflow: hidden;
+}
+
+.centerImage   {
+    max-width: 900px;
+    max-height: 90px;
+    object-fit: contain;
+    position: relative;
+    padding-top: 2px;
+    margin-bottom: 12px;
+    transform: perspective(300px) rotateX(180deg) rotateY(90deg);
+    box-shadow: -10px 18px 20px 50px rgba(2, 22, 1, 1), -10px 20px 6px 8px rgba(1, 1, 1, 1);
+    border-radius: 100px;
+    animation: float 10s ease-in-out infinite;
+}
+
+/* Hover Effect */
+.centerImage:hover {
+  background: #ede8d0;
+  transform: perspective(700px) rotateX(0deg) rotateY(0deg) scale(20);
+  box-shadow:-10px 110px 10px 20px rgba(0, 0, 0, 0.5), 0px 200px 60px 800px rgba(0, 0, 0, 0.3);
+}
+
+
+.ntbImage {
+  max-width: 40px; /* Adjust size as needed */
+  max-height: 150px; /* Adjust size as needed */
+  object-fit: contain;
+  position: relative;
+  margin-top: 10px; /* Spacing between ntbImage and centerImage */
+  display: block; /* Ensures proper stacking below centerImage */
+  animation: fadeInntb 3s ease-in-out; /* Optional: adds a fade-in effect */
+}
+
+#cta-button {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  background-color: #d47e30;
+  color: white;
+  border: none;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -13px 20px 20px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+}
+#cta-button i {
+  font-size: 24px;
+}
+
+#root-content {
+  opacity: 100;
+  transition: opacity 0.1s ease-in-out;
+  display: none;
+}
+#root-content.show {
+  opacity: 300;
+  display: block;
+}
+/* Main section styling */
+.main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ffffff, #f1f1f1);
+    color: #fff;
+}
+
+.view {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 460px;
+    height: 100vh;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
+
+/* Background and Ask Section */
+.bg {
+    background-image: url('/public/images/background_mountain.jpg');
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 10px;
+    height: 18vh;
+    text-align: center;
+}
+.line-container {
+    width:90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+
+}
+.line {
+    width: 90%;
+    height: 2px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.1) 100%);
+    border-radius: 12px;
+    padding-left:30px;
+    padding-right: 20px;
+
+}
+
+.ask {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    color: orange;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.logo-section {
+    margin-top: 0px;
+
+}
+
+.logo img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Ensures no extra space around the image */
+    margin: 0 auto;
+    padding-right : 50px;
+    padding-left: 40px/* Centers the image horizontally, if necessary */
+}
+.section {
+    font-size: 25px;
+    color: brown;
+    margin-top: 3px;
+
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 13px;
+}
+
+.icon-faq {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    padding:5px;
+}
+
+.icon-faq img {
+    width: 100%; /* Adjust image size to fit the container */
+    height: auto;
+    object-fit: center; /* Ensure image doesn't get distorted */
+}
+
+.icon-faq img:hover {
+    opacity: 1; /* Optional: Reduce image opacity on hover */
+}
+
+/* Says Section */
+.says {
+    display: flex; /* Enables flex layout */
+    align-items: center; /* Vertically aligns items */
+    gap: 10px; /* Adds spacing between dot and text */
+}
+
+.dot {
+    width: 10px; /* Size of the dot */
+    height: 10px; /* Same height for the circular dot */
+    background: orange;
+    border-radius: 50%; /* Makes it circular */
+    flex-shrink: 0; /* Prevents shrinking of the dot */
+    margin-left: 8px;
+}
+
+.says p {
+    margin: 0; /* Removes default paragraph margin for proper alignment */
+    font-size: 14px; /* Adjust font size as needed */
+    color: orange; /* Text color */
+}
+/* Info Section */
+.info {
+    font-size: 18px;
+    padding: 6px;
+    padding-bottom:70px;
+    flex-grow: 1; /* Makes this section take the available space */
+    overflow-y: auto; /* Enables vertical scrolling when the text is long */
+    max-height: calc(100vh - 245px);
+    color: purple;
+    font-family: bold;
+    text-align: left;
+    background-color: #f9f9f9; /* Optional: Separate background for better contrast */
+}
+
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #dcdcdc;
+    border-radius: 100px;
+    padding: 10px 15px;
+    box-shadow: 20px -13px 15px 4px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    max-width: 400px;
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-container i {
+    color: #e11d3f;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+    background-color: transparent;
+    font-family: Arial, sans-serif;
+}
+
+.input-container input::placeholder {
+    color: #aaa;
+}
+
+.input-container .fa-microphone {
+  color: orange;
+}
+.input-container .fa-paper-plane{
+    color: orange;
+}
+/* General styling */
+.app {
+    font-family: Arial, sans-serif;
+}
+
+/* Chat messages container */
+.messages {
+
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 13x;
+    border-radius: 5px;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.user-message {
+        /*
+    * Created with https://www.css-gradient.com
+    * Gradient link: https://www.css-gradient.com/?c1=ea8b2c&c2=ecbd7d&gt=c&gd=dbr
+    */
+    background: #FC6A03; /* Fallback solid orange */
+    background: conic-gradient(
+        from 135deg,
+        #FF4500, /* Bright red-orange */
+        #FC6A03, /* Fiery orange */
+        #FFD700, /* Bright yellow for highlights */
+        #FC6A03, /* Return to fiery orange */
+        #FF4500 /* Deep red-orange */
+    );
+    color: #FFFAFA; /* Darker red text for better readability */
+    text-align: right;
+    padding: 10px 15px;
+    border-radius: 100px;
+    margin: 10px 0;
+    max-width: auto; /* Limit message width */
+    animation: fadeInuser 4s ease-out, slideUp 3s ease-out;
+    font-family: 'Arial', fantasy; /* Make text clean and readable */
+    box-shadow: -10px 6px 4px 2px rgba(0, 0, 0, 0.1) /* Add slight shadow */
+}
+
+/* Add hover effect for slight emphasis */
+.user-message:hover {
+    background-color: #f5c6cb; /* Slightly darker red on hover */
+    transform: scale(1); /* Subtle zoom */
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.bot-message {
+    background: conic-gradient(from 125deg, #ff3b00, /* Bright red-orange */ #FC6A03, /* Fiery orange */ #FFD700, /* Bright yellow for highlights */ #fcc603, /* Return to fiery orange */ #3f51b500 /* Deep red-orange */);
+    color: indigo;
+    text-align: left;
+    padding: 10px 15px;
+    border-radius: 40px;
+    margin: 10px 0;
+    max-width: auto;
+    animation: fadeInUser 5s ease-out, slideUp 3s ease-in-out;
+    font-family: 'Arial', fantasy;
+    box-shadow: -20px 6px 4px 2px rgba(0, 0, 0, 0.1) /* Add slight shadow */;
+}
+.bot-message:hover {
+    background-color: #f5c6cb; /* Slightly darker red on hover */
+    transform: scale(0.9); /* Subtle zoom */
+    transition: transform 10s, background-color 9s;
+}
+/* Input container */
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Related questions section */
+.related-questions {
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.related-question {
+    padding: 10px;
+    background: #FFFAFA;
+    color: blue;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.related-question:hover {
+    background-color:  white;
+}
+
+/* Animations */
+@keyframes fadeInuser {
+    0% {
+        opacity: -8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInntb {
+  from {
+    opacity: -15;
+  }
+  to {
+    opacity: 45;
+  }
+}
+/* Keyframes for slide-up animation */
+@keyframes slideUp {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: perspective(500px) rotateX(10deg) rotateY(10deg) translateY(0);
+  }
+  50% {
+    transform: perspective(800px) rotateX(10deg) rotateY(-5deg) translateY(-20px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 50;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    .earth-container {
+    width: 150px;
+    height: 150px;
+    left: 2%;
+    display: none;/* Adjust position for smaller screens */
+  }
+
+  .earth {
+    width: 100px;
+    height: 100px;
+  }
+    .view {
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .ask {
+        font-size: 20px;
+    }
+}
+
+
